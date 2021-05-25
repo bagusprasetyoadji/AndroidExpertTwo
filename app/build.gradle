@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
 }
 apply from: '../shared_dependencies.gradle'
@@ -21,6 +20,10 @@ android {
 
     buildTypes {
         release {
+            minifyEnabled true
+            proguardFiles 'proguard-rules.pro'
+        }
+        debug {
             minifyEnabled true
             proguardFiles 'proguard-rules.pro'
         }
