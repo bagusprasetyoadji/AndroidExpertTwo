@@ -23,6 +23,10 @@ android {
             minifyEnabled true
             proguardFiles 'proguard-rules.pro'
         }
+        debug {
+            minifyEnabled true
+            proguardFiles 'proguard-rules.pro'
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
